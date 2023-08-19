@@ -19,3 +19,29 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 python index.py
+
+```
+
+
+## Usage
+
+1. Clone or download this repository.
+
+2. Open a terminal and navigate to the project directory.
+
+3. Run the Flask application:
+
+The API server will start and listen on `http://127.0.0.1:5000/`.
+
+## Endpoints
+
+- **GET /api/episodes**: Returns a list of all episodes.
+
+Query Parameters:
+- `chapter=false`: Exclude chapters and only list episodes.
+- `number=<episode_number>`: Get details of a specific episode by number.
+- `title=<episode_title>`: Search for episodes containing a specific title.
+
+- **GET /api/chapters**: Returns a list of all chapters.
+
+Test URL: [https://onepiece.r2dlan.me/api/episodes](https://onepiece.r2dlan.me/api/episodes)
